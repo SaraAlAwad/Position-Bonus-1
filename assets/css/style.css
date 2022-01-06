@@ -1,0 +1,129 @@
+/*
+Die Höhe des <body> ist 100vh.
+Schriftarten: “Monoton”, “Ubuntu”.
+Nutze die Farben #070707, #9d9f9f, #f4f7f8 und #AC8059
+font-family: 'Monoton', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #070707;
+    
+}
+h1{
+    color: #9d9f9f;
+    font-size: 3rem;
+    margin-bottom: 5%;
+    width: 40%;
+    text-align: center;
+  
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #f4f7f8 ;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+header{
+    border-bottom: 1px solid #9d9f9f ;
+    position: relative;
+}
+header nav ul li{
+    padding: 3em;
+}
+header section{
+width: 40%;
+position: relative;
+padding: .5em;
+}
+header section div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header section img{
+    width:10%;
+    display: block;
+    margin-left: 10%;
+}
+header nav{
+    list-style: none;
+    text-align: right;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%,-50%);
+}
+
+header a{
+    color: #9d9f9f ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+/* +++++ main part ++++++ */
+main section{
+    height: 80vh;
+    position: relative;
+   
+}
+article{
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    /* margin: 10% auto; */
+}
+article a{
+    color: #AC8059;
+    padding-left: 1em;
+}
+article a:hover{
+    text-decoration: underline;
+    color: #AC8059;
+
+}
+main section img{
+    width: 20%;
+    height: 80%;
+    padding: 1em;
+    position: absolute;
+    left: 45%;
+    top: 8%;
+}
+main section img:nth-of-type(2){
+    left: 65%;
+   
+}
+main section img:nth-of-type(3){
+    left: 85%;
+}
+/* +++++ Footer +++++++ */
+footer  {
+padding: 1%;
+padding-left: 3%;
+}
+footer nav ul li{
+    padding: .8em;
+}
+.fab{
+    color: #f4f7f8;
+    font-size: 1.3rem;
+    opacity: .6;
+}
+.fab:hover{
+    opacity: 1;
+}
